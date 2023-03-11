@@ -1,0 +1,137 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root{
+--DesaturatedRed: hsl(0, 36%, 70%);
+--SoftRed: hsl(0, 93%, 68%);
+--DarkGrayishRed: hsl(0, 6%, 24%);
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    padding: 40px;
+}
+
+
+
+.imagem .img-desktop{
+    display: none;
+
+}
+
+.imagem .img-mobile{
+    min-width: 330px;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.315);
+    width: 100%;
+}
+
+main{
+    padding: 50px 40px 80px 40px;
+}
+
+h1{
+    color: var(--DesaturatedRed);
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+strong{
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--DarkGrayishRed);
+}
+
+p{
+    color: var(--DesaturatedRed);
+    line-height: 25px;
+    margin: 25px 0px;
+    text-align: center;
+}
+
+input[type="email"]{
+    padding: 18px 50px 20px 30px;
+
+    border-radius: 40px;
+    width: 100%;
+    display: block;
+    color: var(--DarkGrayishRed);
+    border: .5px solid hsla(0, 36%, 70%, 0.568);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.048);
+    outline: none;
+}
+
+input:focus{
+    border: 0.5px solid hsla(0, 6%, 24%, 0.301);
+}
+input::placeholder{
+    color: var(--DesaturatedRed);
+    opacity: 0.4;
+    font-weight: 400;
+}
+
+.emailContainer{
+    position: relative;
+    max-width: 400px;
+    margin-top: 30px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.invalidEmail{
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--SoftRed);
+        margin: 0px;
+        margin-left: 4%;
+
+}
+
+button{
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+    padding: 0px 40px;
+    height: 100%;
+    border: none;
+    box-shadow: 0px 2px 10px hsla(0, 74%, 74%, 0.644);
+    transition: all .5s;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+.svgIcon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 90px;
+    box-shadow: 0px 0px 6px var(--SoftRed);
+    border-radius: 50%;
+
+
+}
+
+button:hover{
+    background-image: linear-gradient(to right, hsl(0, 21%, 76%), hsl(0, 20%, 74%));
+    box-shadow: 0px 6px 10px hsla(0, 74%, 74%, 0.555);
+    
+}
+
+.error{
+    display: none;
+}
+

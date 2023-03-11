@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+
+@media screen and (min-width: 800px){
+
+    body{
+    display: grid;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: linera-gradient(135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+
+}
+
+    header{
+        grid-area: header;
+        left: 0;
+        position: absolute;
+        padding: 50px 40px 40px 10vw !important;
+       
+    }
+
+    main{
+        grid-area: main;
+        padding: 180px 11vw 150px 10vw !important;
+        width: 60vw;
+
+        height: 100vh;
+        
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-position: center center;
+    }
+
+    p,h1{
+        text-align: left !important;
+    }
+
+    h1{
+        font-size: 4.1em !important;
+    }
+
+    .imagem .img-desktop{
+        grid-area: imagem;
+        display: block !important;
+        height: 100vh !important;
+        width: 40vw;
+        
+    }
+
+    .imagem .img-mobile{
+        display: none !important;
+    }
+
+    input{
+        padding-right: 130px !important;
+    }
+
+    .emailContainer{
+        margin: 20px 0px 10px 0px !important;
+    }
+
+}
+
