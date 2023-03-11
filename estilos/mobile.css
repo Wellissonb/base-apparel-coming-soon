@@ -96,8 +96,8 @@ input::placeholder{
         font-size: 14px;
         color: var(--SoftRed);
         margin: 0px;
-        margin-left: 4%;
-
+        margin: auto;
+        display: block;
 }
 
 button{

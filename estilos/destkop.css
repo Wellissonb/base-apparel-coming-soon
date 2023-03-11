@@ -58,5 +58,11 @@
         margin: 20px 0px 10px 0px !important;
     }
 
+    .invalidEmail{
+        display: inline !important;
+        margin: 0px !important;
+        margin-left: 6% !important;
+    }
+
 }
 
