@@ -21,7 +21,7 @@
 
     main{
         grid-area: main;
-        padding: 180px 11vw 150px 10vw !important;
+        padding: 180px 16vw 150px 13vw !important;
         width: 60vw;
 
         height: 100vh;
@@ -55,7 +55,7 @@
     }
 
     .emailContainer{
-        margin: 20px 0px 10px 0px !important;
+        margin: 30px 0px 10px 0px !important;
     }
 
     .invalidEmail{
